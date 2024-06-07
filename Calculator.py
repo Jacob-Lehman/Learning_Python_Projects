@@ -48,6 +48,7 @@ class Calculator:
             else:
                 self.currentNumber *= 10
                 self.currentNumber += i
+                self.newNum = False
             self.label.config(text=self.currentNumber)
         elif i == 16:
             self.currentNumber = int(self.currentNumber/10)
